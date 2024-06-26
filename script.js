@@ -157,6 +157,60 @@ const questions = [
     ]
   },
   {
+    question: '¿De qué trabaja Ross?',
+    answers: [
+      { text: 'Paleontólogo', correct: true },
+      { text: 'Artist', correct: false },
+      { text: 'Fotógrafa', correct: false },
+      { text: 'Vendedor de seguros', correct: false }
+    ]
+  },
+  {
+    question: '¿A quién se dirigía siempre la revista de televisión de Chandler?',
+    answers: [
+      { text: 'Chanandler Bong', correct: true },
+      { text: 'Chanandler Bang', correct: false },
+      { text: 'Chandler Bing', correct: false },
+      { text: 'Chandler Beng', correct: false }
+    ]
+  },
+  {
+    question: '¿Qué es más probable que diga Janice?',
+    answers: [
+      { text: '¡Tráeme un café!', correct: false },
+      { text: '¡Háblale a la mano!', correct: false },
+      { text: '¡De ninguna manera!', correct: false },
+      { text: '¡Oh Dios mío!', correct: true }
+    ]
+  },
+  {
+    question: '¿Cómo se llama la persona gruñona que trabaja en la cafetería?',
+    answers: [
+      { text: 'Herman', correct: false },
+      { text: 'Gunther', correct: true },
+      { text: 'Frasier', correct: false },
+      { text: 'Eddie', correct: false }
+    ]
+  },
+  {
+    question: '¿Quién interpreta el tema de Friends?',
+    answers: [
+      { text: 'Aerosmith', correct: false },
+      { text: 'The Rembrandts', correct: true },
+      { text: 'Queen', correct: false },
+      { text: 'Foo fighters', correct: false }
+    ]
+  },
+  {
+    question: '¿Qué tipo de uniforme usa Joey para la boda de Monica y Chandler?',
+    answers: [
+      { text: 'Cocinero', correct: false },
+      { text: 'Un jugador de beisbol', correct: false },
+      { text: 'Soldado', correct: true },
+      { text: 'Bombero', correct: false }
+    ]
+  },
+  {
     question: 'Mónica sale brevemente con el multimillonario Pete Becker. ¿En qué país la lleva a su primera cita?',
     answers: [
       { text: 'Francia', correct: false },
