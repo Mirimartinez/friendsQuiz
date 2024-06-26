@@ -1,0 +1,108 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root{
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+    --img-correct: url('https://i.pinimg.com/originals/85/5f/61/855f619765eb93fd85709a333f5ea9d3.jpg');
+    --img-wrong: url('https://www.cinelinx.com/wp-content/uploads/2024/05/Friends.jpg');
+    ;
+}
+
+body{
+    --hue: var(--hue-neutral);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    /* background-color: hsl(var(--hue), 100%, 20%); */
+    background-image: url('https://assets.dmagstatic.com/wp-content/uploads/2019/09/30261395_10155692551164576_4149353147157970944_o.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+body.correct{
+    background-image: var(--img-correct);
+    background-position: center;
+    background-size: cover;
+}
+
+body.wrong{
+    background-image: var(--img-wrong);
+    background-position: center;
+    background-size: cover;
+}
+
+.container{
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;   
+}
+
+.btn-grid{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn{
+    --hue: var(--hue-neutral);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    background-color: hsl(var(--hue), 100%, 50%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+}
+
+.btn:hover{
+    border-color: black;
+}
+
+.btn.correct{
+    --hue: var(--hue-correct);
+    color: black;
+}
+
+.btn.wrong{
+    --hue: var(--hue-wrong);
+}
+
+.start-btn, .next-btn{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 0 5px;
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide{
+    display: none;
+}
+
+/* #drawing_canvas {
+    position: absolute;
+    width: 90vw;
+    height: 90vh;
+    top: 51px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    right: 0;
+    pointer-events: none;
+} */
